@@ -1,11 +1,13 @@
 [package]
-name = "cargo-yeet"
+# Can't rename because of https://github.com/rust-lang/crates.io/issues/728
+name = "cargo_yeet"
 version = "0.0.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Yeet rust target directories."
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "cargo-yeet"
 
 [dependencies]
 clap = { version = "4", features = ["cargo"] }
